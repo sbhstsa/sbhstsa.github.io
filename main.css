@@ -1,0 +1,7 @@
+.tsa-header {
+  background: url('../images/header.jpg') center / cover;
+}
+.tsa-header .mdl-layout__drawer,
+.tsa-header .mdl-layout__header-row {
+  color: black;// 87%;
+}
