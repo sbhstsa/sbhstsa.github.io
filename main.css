@@ -1,7 +1,39 @@
-.tsa-header {
+.tsa-header-section {
   background: url('../images/header.jpg') center / cover;
 }
+
+.tsa-header-navbar {
+    background-color: white;
+    box-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+    
+}
+.tsa-header-logo {
+  background: url('../images/logo.png') center / contain no-repeat;
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: 60%;
+}
+
 .tsa-header .mdl-layout__drawer,
+.tsa-header .mdl-navigation__link,
 .tsa-header .mdl-layout__header-row {
-  color: black;// 87%;
+  color: black;
+  text-shadow: -1px 0 white, 0 2px white, 1px 0 white, 0 -1px white;
+
+  font-weight: bold;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.section-a {
+    background-color: whitesmoke;
+    color: darkslategray;
+}
+
+.section-b{
+    background-color: darkslategray;
+    color: whitesmoke;
 }
