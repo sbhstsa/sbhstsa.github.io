@@ -2,10 +2,20 @@
   background: url('../images/header.jpg') center / cover;
 }
 
+section {
+    min-height: 100vh;
+}
+
+@media only screen and (min-width:1025px){
+    section {
+        min-height: 92vh;
+    }
+}
+
 .tsa-header-navbar {
     background-color: white;
     box-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
-    
+    height:8vh;
 }
 .tsa-header-logo {
   background: url('../images/logo.png') center / contain no-repeat;
@@ -22,10 +32,6 @@
   text-shadow: -1px 0 white, 0 2px white, 1px 0 white, 0 -1px white;
 
   font-weight: bold;
-}
-
-section {
-    min-height: 100vh;
 }
 
 .section-a {
