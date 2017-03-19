@@ -25,6 +25,11 @@ html, body, .mdl-grid {
     font-size: 60px;
 }
 
+.mdl-card__supporting-text img {
+    height: 800px;
+    object-position: center;
+}
+
 section {
     min-height: 100vh;
 }
@@ -72,4 +77,3 @@ section {
     width: 100%;
     margin: auto;
 }
-
