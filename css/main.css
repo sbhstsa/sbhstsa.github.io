@@ -1,6 +1,28 @@
 
+html, body, .mdl-grid {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 .tsa-header-section {
   background: url('../images/header.jpg') center / cover;
+}
+
+.mdl-layout__drawer-button {
+    padding: 20px;
+}
+
+.mdl-layout__drawer .mdl-layout-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.mdl-layout__drawer .mdl-navigation__link {
+    font-size: 30px;
+}
+
+.mdl-layout__drawer-button .material-icons{
+    font-size: 60px;
 }
 
 section {
@@ -44,3 +66,10 @@ section {
     background-color: darkslategray;
     color: whitesmoke;
 }
+
+.event-card {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
