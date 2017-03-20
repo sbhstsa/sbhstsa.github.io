@@ -72,6 +72,10 @@ section {
     color: whitesmoke;
 }
 
+#events {
+    display: none;
+}
+
 .event-card {
     display: block;
     width: 100%;

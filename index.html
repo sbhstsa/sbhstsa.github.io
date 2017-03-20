@@ -29,9 +29,7 @@
         <div class="tsa-header mdl-layout mdl-js-layout">
             <header class="mdl-layout__header mdl-layout__header--transparent">
                 <div class="tsa-header-navbar mdl-layout__header-row">
-                    <span class="mdl-layout__title">
-                        <span class="mdl-layout__title">SBHS TSA</span>
-                    </span>
+                    <a class="mdl-navigation__link" href="#header"><span class="mdl-layout-title"><b>SBHS TSA</b></span></a>
                     <div class="mdl-layout-spacer"></div>
                 <!-- Navigation -->
                     <nav class="mdl-navigation">
@@ -44,7 +42,7 @@
                 </div>
             </header>
             <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-                <span class="mdl-layout-title">SBHS TSA</span>
+                <a class="mdl-navigation__link" href="#header"><span class="mdl-layout-title">SBHS TSA</span></a>
                 <nav class="mdl-navigation">
                     <a class="mdl-navigation__link" href="#about-tsa">About TSA</a>
                     <a class="mdl-navigation__link" href="#about-sbhs-tsa">TSA at SBHS</a>
@@ -54,7 +52,7 @@
                 </nav>
             </div>
             <main class="tsa-content mdl-layout__content">
-                <section class="tsa-header-section">
+                <section id="header" class="tsa-header-section">
                     <br><br>
                     <div class="tsa-header-logo"></div>
                     <br><br>
@@ -65,12 +63,20 @@
                             <div class="mdl-cell mdl-cell--10-col">
                                 <h4>Overview</h4>
                                 <p>The Technology Student Association (TSA) is a nationwide organization composed of a student body that promotes Science, Technology, Engineering, and Mathematics (STEM). Its purpose is to develop leadership in students and expose them to the different career opportunities available in the STEM field. TSA members are from about 2000 schools in 49 states across the country, and are a population of diverse individuals with different backgrounds and interests. The organization runs a wide range of competitions, including architecture, fashion, and robotics.</p>
+                                <br>
                                 <h4>Events</h4>
                                 <p>TSA holds annual state and national conferences every year, where teams from all over the country meet and share ideas and projects. Select an event below to find out more about it, or visit <a href="http://www.tsaweb.org/High-School-Competitions">http://www.tsaweb.org/High-School-Competitions</a> for more information.</p>
                             </div>
                         <div class="mdl-cell mdl-cell--1-col"></div>
+                        <div class="mdl-cell mdl-cell--1-col"></div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                        <button id="event-button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                            Event Details <i id="events-button-icon" class="material-icons">arrow_drop_down</i>
+                        </button>
+                        </div>
+                        <div class="mdl-cell mdl-cell--7-col"></div>
                     </div>
-                    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                    <div id="events" class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
                         <div class="mdl-grid">
                             <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-phone mdl-cell--12-col-tablet">
                                 <div class="mdl-tabs__panel is-active" id="animation-panel">

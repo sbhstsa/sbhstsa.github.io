@@ -6,6 +6,7 @@
 
 
 $(document).ready(() => {
+    let eventsSectionShowing = false;
     // Overrides nav/drawer link behavior so content fades out and back in
     $(".mdl-navigation__link").toArray().forEach( (link) => {
         $(link).on('click', (event) => {
@@ -17,4 +18,17 @@ $(document).ready(() => {
             $('.tsa-content').fadeIn(250);
         });
     });
+    
+    $("#event-button").on('click', () => {
+        console.log("test");
+        eventsSectionShowing = !eventsSectionShowing;
+        if(eventsSectionShowing) {
+            $("#events").slideDown();
+            $("#events-button-icon").html("arrow_drop_up");
+        } else {
+            $("#events").slideUp();
+            $("#events-button-icon").html("arrow_drop_down");
+        }
+    });
+    
 });
