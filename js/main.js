@@ -20,7 +20,6 @@ $(document).ready(() => {
     });
     
     $("#event-button").on('click', () => {
-        console.log("test");
         eventsSectionShowing = !eventsSectionShowing;
         if(eventsSectionShowing) {
             $("#events").slideDown();
