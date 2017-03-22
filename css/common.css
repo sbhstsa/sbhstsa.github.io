@@ -4,6 +4,12 @@
         overflow-x: hidden;
     }
 
+    .social {
+        display: block;
+        width:  130px;
+        margin: auto;
+    }
+
 /* Panel Sizing */
     section {
         min-height: 100vh;

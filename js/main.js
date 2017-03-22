@@ -14,8 +14,8 @@ $(document).ready(() => {
             setTimeout( () => {
                 window.location = $(link).attr('href');
             }, 250);
-            $('.tsa-content').fadeOut(250);
-            $('.tsa-content').fadeIn(250);
+            $('.tsa-content,.ar-content').fadeOut(250);
+            $('.tsa-content,.ar-content').fadeIn(250);
         });
     });
     
