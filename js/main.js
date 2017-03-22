@@ -1,17 +1,16 @@
 /*
-    All js is written using ES6 standards (i.e. functions are 
-    replaced with lambda expressions, let is used in place of
-    var), and the DOM is accessed primarily through jQuery's API.
+    All js is written using ES5 standards, as Internet Explorer does not support
+    ES6 features (lambda expressions to replace functions; let instead of var)
 */    
 
 
-$(document).ready(() => {
-    let eventsSectionShowing = false;
+$(document).ready(function () {
+    var eventsSectionShowing = false;
     // Overrides nav/drawer link behavior so content fades out and back in
-    $(".mdl-navigation__link").toArray().forEach( (link) => {
-        $(link).on('click', (event) => {
+    $(".mdl-navigation__link").toArray().forEach( function(link) {
+        $(link).on('click', function(event) {
             event.preventDefault();
-            setTimeout( () => {
+            setTimeout( function() {
                 window.location = $(link).attr('href');
             }, 250);
             $('.tsa-content,.ar-content').fadeOut(250);
@@ -19,7 +18,7 @@ $(document).ready(() => {
         });
     });
     
-    $("#event-button").on('click', () => {
+    $("#event-button").on('click', function() {
         eventsSectionShowing = !eventsSectionShowing;
         if(eventsSectionShowing) {
             $("#events").slideDown();

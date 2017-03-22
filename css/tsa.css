@@ -20,11 +20,10 @@
     height:8vh;
 }
 .tsa-header-logo {
-  background: url('../images/logo.png') center / contain no-repeat;
   display: block;
   margin: auto;
-  width: 60%;
-  height: 60%;
+  width: 48%;
+  height: 48%;
 }
 
 .tsa-header .mdl-layout__drawer,
