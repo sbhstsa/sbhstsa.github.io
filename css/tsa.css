@@ -1,0 +1,69 @@
+/* Coloring */
+.section-a {
+    background-color: whitesmoke;
+    color: darkslategray;
+}
+
+.section-b{
+    background-color: darkslategray;
+    color: whitesmoke;
+}
+
+/* Header */
+.tsa-header-section {
+  background: url('../images/header.jpg') center / cover;
+}
+
+.tsa-header-navbar {
+    background-color: white;
+    box-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+    height:8vh;
+}
+.tsa-header-logo {
+  background: url('../images/logo.png') center / contain no-repeat;
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: 60%;
+}
+
+.tsa-header .mdl-layout__drawer,
+.tsa-header .mdl-navigation__link,
+.tsa-header .mdl-layout__header-row {
+  color: black;
+  text-shadow: -1px 0 white, 0 2px white, 1px 0 white, 0 -1px white;
+
+  font-weight: bold;
+}
+
+/* Cards */
+.event-card {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+@media only screen and (min-width:1025px){
+    .event-card img {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .event-card img {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+.mdl-card__supporting-text img {
+    height: 800px;
+    object-position: center;
+    box-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+}
+
+/* Active Sections */
+#events {
+    display: none;
+}
