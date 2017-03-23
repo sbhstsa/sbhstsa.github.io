@@ -6,7 +6,7 @@
 
     .social {
         display: block;
-        width:  130px;
+        width:  300px;
         margin: auto;
     }
 
@@ -40,3 +40,8 @@
         font-size: 60px;
         text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     }
+
+.mdl-card, .center {
+    display: block;
+    margin: auto;
+}
